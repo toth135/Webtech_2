@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8e98cb1-449c-4fba-b2d7-a1d1cab0f9d4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Angular5App/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Angular5App/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Angular5App/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Angular5App/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Angular5App/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Angular5App/src/index.html" afterDir="false" />
@@ -14,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Angular5App" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1c5VlhsJXsl2DyT9MW7KzD5lCrg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -48,6 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589818593493</updated>
       <workItem from="1589818594590" duration="7202000" />
+      <workItem from="1590142641440" duration="571000" />
     </task>
     <servers />
   </component>
@@ -59,7 +61,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

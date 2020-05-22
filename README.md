@@ -19,3 +19,5 @@ Please follow these steps to start the application!
 5th: Login 
      username: admin,
      password: admin
+
+Created by Tóth Péter, E445EX
