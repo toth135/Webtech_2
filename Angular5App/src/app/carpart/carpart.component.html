@@ -1,0 +1,88 @@
+<div class="row">
+  <div class="col s12">
+    <div class="card">
+      <div class="card-content white-text">
+        <div class="row">
+          <div class="col s5">
+            <form #carpartForm="ngForm" (ngSubmit)="onSubmit(carpartForm)">
+              <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="carpartService.selectedCarpart._id">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input name="name" #name="ngModel" type="text" [(ngModel)]="carpartService.selectedCarpart.name" placeholder="Enter car part name" required>
+                  <label>Name :
+                    <label class="red-text">*</label>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" name="car_type" #name="ngModel" [(ngModel)]="carpartService.selectedCarpart.car_type" placeholder="Eg : Suzuki swift" required>
+                  <label>Car type :
+                    <label class="red-text">*</label>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" name="description" #name="ngModel" [(ngModel)]="carpartService.selectedCarpart.description" placeholder="Enter some description">
+                  <label>Description :</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" name="price" pattern="^[0-9]+$" #name="ngModel" [(ngModel)]="carpartService.selectedCarpart.price" placeholder="Price in Ft" required>
+                  <label>Price :
+                    <label class="red-text">*</label>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <button class="btn btn-custom right" type="button" (click)="resetForm(carpartForm)">Reset</button>
+                  <button class="btn btn-primary left" type="submit" [disabled]="!carpartForm.valid">Submit</button>
+                </div>
+              </div>
+              <div class="row">
+                <label>
+                  <label class="red-text">*</label>
+                  Can not be empty field.
+                </label>
+              </div>
+              <div class="row">
+                <button class="btn btn-custom left" routerLink="/">Logout</button>
+              </div>
+            </form>
+          </div>
+          <div class="col s7">
+            <table class="responsive-table highlight">
+              <thead>
+              <tr>
+                <th>Name</th>
+                <th>Car type</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th></th>
+              </tr>
+              </thead>
+              <tr *ngFor="let parts of carpartService.carparts">
+                <td>{{parts.name}}</td>
+                <td>{{parts.car_type}}</td>
+                <td>{{parts.description}}</td>
+                <td>{{parts.price}}</td>
+                <td>
+                  <a class="action-btn" (click)="onEdit(parts)">
+                    <i class="material-icons">edit</i>
+                  </a>
+                  <a class="action-btn-del" (click)="onDelete(parts._id, carpartForm)">
+                    <i class="material-icons">delete_outline</i>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
